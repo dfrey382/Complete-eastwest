@@ -3,9 +3,11 @@
 
 // Variables
 @import 'variables';
-
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/bootstrap";;
+@import 'styles';
+
+
 
 .bg-gradient-primary {
     background: #020;
@@ -15,4 +17,8 @@ $primary:#03B2AD;
     .header-inner{
         background-color: #020 !important;
     }
+}
+.footer-logo {
+    margin-top: 60px;
+    margin-bottom: 12px;
 }

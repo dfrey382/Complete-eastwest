@@ -344,8 +344,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-rocket"></i>
-                    <h4>Free shiping</h4>
-                    <p>Orders over $100</p>
+                    <h4>Elevate Your Game</h4>
+                    <p>Find Your Winning Jersey Here!</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -353,8 +353,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-reload"></i>
-                    <h4>Free Return</h4>
-                    <p>Within 30 days returns</p>
+                    <h4>Support 24/7</h4>
+                    <p>We are here for you, place your Orders today</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -362,8 +362,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-lock"></i>
-                    <h4>Sucure Payment</h4>
-                    <p>100% secure payment</p>
+                    <h4>Affordable & Durable</h4>
+                    <p>Get value for your Money</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -371,7 +371,7 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-tag"></i>
-                    <h4>Best Peice</h4>
+                    <h4>Best Price</h4>
                     <p>Guaranteed price</p>
                 </div>
                 <!-- End Single Service -->
@@ -544,7 +544,7 @@
         font-size: 50px;
         font-weight: bold;
         line-height: 100%;
-        color: #F7941D;
+        color: #03b2ad;
         }
 
         #Gslider .carousel-inner .carousel-caption p {

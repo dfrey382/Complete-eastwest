@@ -102,7 +102,7 @@
                                                 @php
                                                     $org=($product->price-($product->price*$product->discount)/100);
                                                 @endphp
-                                                <p class="price"><del class="text-muted">${{number_format($product->price,2)}}</del>   ${{number_format($org,2)}}  </p>
+                                                <p class="price"><del class="text-muted">KES {{number_format($product->price,2)}}</del>   KES {{number_format($org,2)}}  </p>
 
                                             </div>
                                         </div>
@@ -192,8 +192,8 @@
                                                 @php
                                                     $after_discount=($product->price-($product->price*$product->discount)/100);
                                                 @endphp
-                                                <span>${{number_format($after_discount,2)}}</span>
-                                                <del style="padding-left:4%;">${{number_format($product->price,2)}}</del>
+                                                <span>KES {{number_format($after_discount,2)}}</span>
+                                                <del style="padding-left:4%;">KES {{number_format($product->price,2)}}</del>
                                             </div>
                                         </div>
                                     </div>
@@ -376,7 +376,7 @@
     .filter_button{
         /* height:20px; */
         text-align: center;
-        background:#F7941D;
+        background:#03b2ad;
         padding:8px 16px;
         margin-top:10px;
         color: white;

@@ -9,6 +9,7 @@
 
 <!-- StyleSheet -->
 <link rel="manifest" href="/manifest.json">
+@vite(['resources/sass/app.scss', 'resources/js/app.js'])
 <!-- Bootstrap -->
 <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.css')}}">
 <!-- Magnific Popup -->

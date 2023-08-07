@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\FrontendController;
 
     use Illuminate\Support\Facades\Route;
 
@@ -41,7 +42,7 @@ use Illuminate\Support\Facades\Auth;
     Route::get('login/{provider}/', 'Auth\LoginController@redirect')->name('login.redirect');
     Route::get('login/{provider}/callback/', 'Auth\LoginController@Callback')->name('login.callback');
 
-    Route::get('/', 'FrontendController@home')->name('home');
+    Route::get('/', [FrontendController::class, 'home'])->name('home');
 
 // Frontend Routes
     Route::get('/home', 'FrontendController@index');
