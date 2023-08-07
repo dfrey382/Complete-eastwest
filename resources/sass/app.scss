@@ -6,3 +6,13 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.bg-gradient-primary {
+    background: #020;
+}
+$primary:#03B2AD;
+.header.shop {
+    .header-inner{
+        background-color: #020 !important;
+    }
+}
