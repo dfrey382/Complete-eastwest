@@ -77,7 +77,7 @@ Many more....
 6. Set your Braintree credentials in your ```.env``` file if you want to use PayPal
 7. Import db file(```database/e-shop.sql```) into your database (```mysql,sql```)
 8. ```npm install```
-9. ```npm run watch```
+9. ```npm run dev```
 10. run command[laravel file manager]:-  ```php artisan storage:link```
 11. Edit ```.env``` file :- remove APP_URL
 10. ```php artisan serve``` or use virtual host
