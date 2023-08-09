@@ -13,6 +13,22 @@
     background: #020;
 }
 $primary:#03B2AD;
+.btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #03B2AD;
+    --bs-btn-border-color: #03B2AD;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #52a1e1;
+    --bs-btn-hover-border-color: #489be0;
+    --bs-btn-focus-shadow-rgb: 44, 122, 187;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #5da6e3;
+    --bs-btn-active-border-color: #489be0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #03B2AD;
+    --bs-btn-disabled-border-color: #03B2AD;
+}
 .header.shop {
     .header-inner{
         background-color: #020 !important;
@@ -21,4 +37,37 @@ $primary:#03B2AD;
 .footer-logo {
     margin-top: 60px;
     margin-bottom: 12px;
+}
+
+.jersey__designer {
+    width: 100%;
+    height: auto;
+    min-height: 550px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+}
+button {
+    border-radius: 0 !important;
+}
+
+.Name__holder{
+    left: 21%;
+    display: block;
+    position: absolute;
+    top: 15%;
+    color: white;
+    font-size: 35px;
+}
+
+.Number__holder{
+    left: 21%;
+    display: block;
+    position: absolute;
+    top: 15%;
+    color: white;
+    font-size: 35px;
 }

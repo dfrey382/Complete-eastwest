@@ -15,7 +15,7 @@
     <div class="card-body">
       <div class="table-responsive">
         @if(count($products)>0)
-        <table class="table table-bordered" id="product-dataTable" width="100%" cellspacing="0">
+        <table class="table table-striped" id="product-dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
               <th>S.N.</th>

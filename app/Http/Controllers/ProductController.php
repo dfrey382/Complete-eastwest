@@ -59,7 +59,8 @@ class ProductController extends Controller
             'status'=>'required|in:active,inactive',
             'condition'=>'required|in:default,new,hot',
             'price'=>'required|numeric',
-            'discount'=>'nullable|numeric'
+            'discount'=>'nullable|numeric',
+            'artisticImage.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
         $data=$request->all();
@@ -70,6 +71,12 @@ class ProductController extends Controller
         }
         $data['slug']=$slug;
         $data['is_featured']=$request->input('is_featured',0);
+        if ($request->hasFile('artisticImage')) {
+            $imagePath = $request->file('artisticImage')->store('gallery_images', 'public');
+            $data['artisticImage'] = $imagePath;
+        }
+
+
         $size=$request->input('size');
         if($size){
             $data['size']=implode(',',$size);
@@ -80,6 +87,12 @@ class ProductController extends Controller
         // return $size;
         // return $data;
         $status=Product::create($data);
+        if ($request->hasFile('gallery')) {
+            foreach ($request->file('gallery') as $image) {
+                $imagePath = $image->store('product_images', 'public');
+                $status->images()->create(['gallery' => $imagePath]);
+            }
+        }
         if($status){
             request()->session()->flash('success','Product Successfully added');
         }
@@ -148,6 +161,11 @@ class ProductController extends Controller
 
         $data=$request->all();
         $data['is_featured']=$request->input('is_featured',0);
+        if ($request->hasFile('artisticImage')) {
+            $imagePath = $request->file('artisticImage')->store('gallery_images', 'public');
+            $data['artisticImage'] = $imagePath;
+        }
+
         $size=$request->input('size');
         if($size){
             $data['size']=implode(',',$size);
@@ -157,6 +175,12 @@ class ProductController extends Controller
         }
         // return $data;
         $status=$product->fill($data)->save();
+        if ($request->hasFile('gallery')) {
+            foreach ($request->file('gallery') as $image) {
+                $imagePath = $image->store('product_images', 'public');
+                $product->images()->create(['gallery' => $imagePath]);
+            }
+        }
         if($status){
             request()->session()->flash('success','Product Successfully updated');
         }
@@ -176,7 +200,7 @@ class ProductController extends Controller
     {
         $product=Product::findOrFail($id);
         $status=$product->delete();
-        
+
         if($status){
             request()->session()->flash('success','Product successfully deleted');
         }

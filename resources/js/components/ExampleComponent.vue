@@ -1,15 +1,10 @@
 <template>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card">
-          <div class="card-header">Example Component</div>
-          <div class="card-body">I'm an example component.</div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <h1>{{ title }}</h1>
 </template>
-
-<script setup>
+<script>
+export default {
+    setup: () => ({
+        title: 'How To Install Vue 3 in Laravel 8 From Scratch'
+    })
+}
 </script>

@@ -1,5 +1,6 @@
 <!-- Meta Tag -->
 @yield('meta')
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <!-- Title Tag  -->
 <title>@yield('title')</title>
 <!-- Favicon -->
@@ -9,7 +10,7 @@
 
 <!-- StyleSheet -->
 <link rel="manifest" href="/manifest.json">
-@vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
 <!-- Bootstrap -->
 <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.css')}}">
 <!-- Magnific Popup -->
@@ -32,6 +33,7 @@
 <link rel="stylesheet" href="{{asset('frontend/css/slicknav.min.css')}}">
 <!-- Jquery Ui -->
 <link rel="stylesheet" href="{{asset('frontend/css/jquery-ui.css')}}">
+
 
 <!-- Eshop StyleSheet -->
 <link rel="stylesheet" href="{{asset('frontend/css/reset.css')}}">

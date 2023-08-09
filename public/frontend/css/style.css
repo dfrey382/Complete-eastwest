@@ -178,25 +178,12 @@ Version:1.0
 /* End Preloader */
 
 .btn {
-	position: relative;
-	font-weight: 500;
-	font-size:14px;
-	color: #fff;
-	background: #333;
 	display: inline-block;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
-	z-index: 5;
-	display: inline-block;
-	padding: 13px 32px;
-	border-radius: 0px;
-	text-transform:uppercase;
 }
-.btn:hover{
-	color:#fff;
-	background:#03b2ad;
-}
+
 #scrollUp {
 	right: 10px;
 	z-index: 33;

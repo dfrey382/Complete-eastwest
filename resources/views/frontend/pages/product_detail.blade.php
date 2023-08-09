@@ -116,7 +116,25 @@
 											@endif
 											<!--/ End Size -->
                                             <div class="d-block my-3">
-                                                <button class="btn-secondary btn">Customize this product</button>
+                                                <button class="btn-secondary btn" data-bs-toggle="modal" data-bs-target="#customizerModal">Customize this product</button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="customizerModal" tabindex="-1" aria-labelledby="customizerModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-xl">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="customizerModalLabel">Customize {{$product_detail->title}}</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body" id="app">
+                                                            <jerseydesigner :product="{{json_encode( $product_detail )}}" />
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
                                             </div>
 											<!-- Product Buy -->
 											<div class="product-buy">
