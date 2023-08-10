@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\PlayerController;
 use App\Http\Controllers\FrontendController;
 
     use Illuminate\Support\Facades\Route;
@@ -119,6 +120,9 @@ use App\Http\Controllers\FrontendController;
         Route::resource('banner', 'BannerController');
         // Brand
         Route::resource('brand', 'BrandController');
+
+        // players
+        Route::resource('players', PlayerController::class);
         // Profile
         Route::get('/profile', 'AdminController@profile')->name('admin-profile');
         Route::post('/profile/{id}', 'AdminController@profileUpdate')->name('profile-update');

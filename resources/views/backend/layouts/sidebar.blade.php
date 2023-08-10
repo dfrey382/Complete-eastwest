@@ -127,7 +127,7 @@
             <i class="fas fa-comments"></i>
             <span>Reviews</span></a>
     </li>
-    
+
 
     <!-- Divider -->
     <hr class="sidebar-divider">
@@ -202,6 +202,11 @@
           <i class="fas fa-table"></i>
           <span>Coupon</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{url('admin/players')}}">
+            <i class="fas fa-table"></i>
+            <span>Player Manager</span></a>
+      </li>
      <!-- Users -->
      <li class="nav-item">
         <a class="nav-link" href="{{route('users.index')}}">
@@ -215,9 +220,6 @@
             <span>Settings</span></a>
     </li>
 
-    <!-- Sidebar Toggler (Sidebar) -->
-    <div class="text-center d-none d-md-inline">
-      <button class="rounded-circle border-0" id="sidebarToggle"></button>
-    </div>
+    
 
 </ul>

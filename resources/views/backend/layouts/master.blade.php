@@ -22,9 +22,15 @@
         @include('backend.layouts.header')
         <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        @yield('main-content')
-        <!-- /.container-fluid -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- Begin Page Content -->
+                        @yield('main-content')
+                    <!-- /.container-fluid -->
+                </div>
+            </div>
+        </div>
 
       </div>
       <!-- End of Main Content -->

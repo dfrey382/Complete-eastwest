@@ -1706,6 +1706,9 @@ Version:1.0
 	margin-bottom: -1px;
 	display: inline-block;
 }
+.product-area .nav-tabs .btn{
+    color: #fff;
+}
 .product-area .nav-tabs li a {
 	color: #333;
 	text-transform: uppercase;
